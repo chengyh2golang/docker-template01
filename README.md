@@ -19,7 +19,8 @@ tar zcf pylon-serivce-web.tar.gz pylon-serivce-web
 
 ## 准备好启动脚本
 
-```#!/bin/sh
+```
+#!/bin/sh
 /opt/pylon-service-web/bin/pylon-service-web start && until [ -f /opt/pylon-service-web/pylon-web.log ]; do sleep 1;done && tail -f /opt/pylon-service-web/pylon-web.log
 ```
 
